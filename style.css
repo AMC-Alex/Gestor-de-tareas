@@ -1,0 +1,177 @@
+/* ===== ESTILOS GENERALES ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f1f5f9;
+  color: #1e293b;
+  padding: 40px 20px;
+}
+
+/* ===== TÍTULO ===== */
+h1 {
+  text-align: center;
+  color: #1d4ed8;
+  margin-bottom: 30px;
+  font-size: 32px;
+}
+
+/* ===== CONTENEDOR PRINCIPAL ===== */
+main {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 25px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+/* ===== CAMPO DE ENTRADA Y BOTÓN AGREGAR ===== */
+main div {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+input[type="text"] {
+  flex: 1;
+  min-width: 0;
+  padding: 12px 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 7px;
+  font-size: 15px;
+  outline: none;
+}
+
+input[type="text"]:focus {
+  border-color: #2563eb;
+}
+
+button {
+  padding: 11px 16px;
+  border: none;
+  border-radius: 7px;
+  background-color: #2563eb;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #1e40af;
+}
+
+/* ===== LISTA DE TAREAS ===== */
+.list-container {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+/* Cada tarea */
+.list-container li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px;
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+}
+
+/* Checkbox */
+.list-container li input[type="checkbox"] {
+  flex-shrink: 0;
+  width: 17px;
+  height: 17px;
+  cursor: pointer;
+  accent-color: #2563eb;
+}
+
+/* Texto de la tarea */
+.list-container li p {
+  flex: 1;
+  min-width: 0;
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+/* Botón de la tarea */
+.list-container li button {
+  flex-shrink: 0;
+  padding: 8px 12px;
+  background-color: #fee2e2;
+  color: #b91c1c;
+  font-size: 13px;
+  border-radius: 6px;
+}
+
+.list-container li button:hover {
+  background-color: #fecaca;
+}
+
+/* ===== CONTADORES ===== */
+main > p {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 14px;
+  margin-top: 10px;
+  background-color: #eff6ff;
+  border-radius: 7px;
+  font-size: 14px;
+}
+
+main > p span {
+  color: #1d4ed8;
+  font-weight: bold;
+}
+
+/* ===== PANTALLAS PEQUEÑAS ===== */
+@media (max-width: 480px) {
+  body {
+    padding: 20px 12px;
+  }
+
+  main {
+    padding: 16px;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+
+  main div {
+    gap: 8px;
+  }
+
+  main div button {
+    padding: 10px 12px;
+  }
+
+  .list-container li {
+    gap: 8px;
+    padding: 10px;
+  }
+
+  .list-container li p {
+    font-size: 14px;
+  }
+
+  .list-container li button {
+    padding: 8px;
+    font-size: 12px;
+  }
+}
+

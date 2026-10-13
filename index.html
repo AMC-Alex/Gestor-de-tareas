@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Gestor de tareas</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <h1>Gestor de tareas</h1>
+
+    <main>
+      <div>
+        <input type="text" id="ingresarTareas" placeholder="Agregar tarea" />
+
+        <button id="btnAgregar">Agregar</button>
+      </div>
+
+      <ul id="list" class="list-container"></ul>
+
+      <p>Total de tareas: <span id="totalTareas">0</span></p>
+
+      <p>Tareas completadas: <span id="tareasCompletadas">0</span></p>
+
+      <p>Tareas pendientes: <span id="tareasPendientes">0</span></p>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
